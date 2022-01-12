@@ -18,7 +18,7 @@ This can be accomplished by either
 
 ## Patches
 
-Due to some errors in the main 2hol repo for this Dockerfile to work some
+Due to some errors in the main 2hol repo, for this Dockerfile to work some
 patches need to be applied to the 2hol game files
 
 Once you clone in the repos using the above method applies the matches in the
