@@ -1,0 +1,34 @@
+From 39ab7ed5fb71441fdfa09b2efa1a5f301ebe3c7e Mon Sep 17 00:00:00 2001
+From: 0xadk <0xadk@users.noreply.github.com>
+Date: Tue, 11 Jan 2022 18:24:04 -0800
+Subject: [PATCH] update compiler used for windows build
+
+---
+ game/platforms/SDL/Makefile.MinGW | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+
+diff --git a/game/platforms/SDL/Makefile.MinGW b/game/platforms/SDL/Makefile.MinGW
+index dbfd06c..92d2125 100644
+--- a/game/platforms/SDL/Makefile.MinGW
++++ b/game/platforms/SDL/Makefile.MinGW
+@@ -37,7 +37,7 @@ PLATFORM_LIBPNG_FLAG = -lz -lpng
+ 
+ 
+ # All platforms but OSX support g++ and need no linker hacks
+-GXX = g++ 
++GXX = i686-w64-mingw32-g++
+ LINK_FLAGS = 
+ 
+ 
+@@ -46,7 +46,7 @@ all: all2
+ 
+ icon.o: ../build/win32/icon.ico ../build/win32/icon.rc
+ 	cp ../build/win32/icon.ico ../build/win32/icon.rc .
+-	windres -i icon.rc -o icon.o
++	i686-w64-mingw32-windres -i icon.rc -o icon.o
+ 
+ ICON_FILE = icon.o
+ 
+-- 
+2.34.1
+

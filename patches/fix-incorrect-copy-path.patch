@@ -1,0 +1,25 @@
+From 7cab157732b6e11f12b6c54484ce803849a951ba Mon Sep 17 00:00:00 2001
+From: 0xadk <0xadk@users.noreply.github.com>
+Date: Tue, 11 Jan 2022 18:17:22 -0800
+Subject: [PATCH] fix incorrect copy path
+
+---
+ build/makeDistributionWindows | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/build/makeDistributionWindows b/build/makeDistributionWindows
+index 4b1917d..52c6e5c 100755
+--- a/build/makeDistributionWindows
++++ b/build/makeDistributionWindows
+@@ -39,7 +39,7 @@ rm */bin_*cache.fcz
+ cd ../..
+ 
+ 
+-cp ../gameSource/OneLife.exe windows/OneLife_$1/
++cp ../gameSource/OneLife.exe windows/2HOL_$1/
+ 
+ cp win32/*.dll windows/2HOL_$1/
+ 
+-- 
+2.34.1
+

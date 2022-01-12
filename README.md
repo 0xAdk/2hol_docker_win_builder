@@ -16,6 +16,14 @@ This can be accomplished by either
 1. cloning them in yourself
 2. running the `./clone_in_2hol_repos.sh` helper script
 
+## Patches
+
+Due to some errors in the main 2hol repo for this Dockerfile to work some
+patches need to be applied to the 2hol game files
+
+Once you clone in the repos using the above method applies the matches in the
+`patches` dir, or use the provided script `apply_patches.sh`
+
 # Building
 
 To build the game just use
