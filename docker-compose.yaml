@@ -5,6 +5,8 @@ services:
     build: ./src
     cap_add:
       - SYS_ADMIN
+    security_opt:
+      - apparmor:unconfined
     volumes:
       - ./2hol:/src:ro
       - ./output:/output
