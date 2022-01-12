@@ -25,6 +25,6 @@ $ docker-compose up
 ```
 
 This will
-1. create the docker file
+1. create the docker image
 2. build the game
 3. place the built game in `output`
